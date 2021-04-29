@@ -136,6 +136,17 @@
 									<td>0.0497</td>
 								</tr>
 								</table>
+								<LI>Frequently Asked Questions:</LI>
+								<OL>
+											<li>Q: How to deal with the spotted intervals with overlap? <br />
+												A: We consider that each ground-truth interval corresponds to at most one single spotted interval. If your algorithm detects multiple  with overlap, you should merge them into an optimal interval. The fusion method is also part of your algorithm, and the final result evaluation only cares about the optimal interval obtained.
+											</li>
+									<li>Q: How to validate the algorithm and obtain the final result when using machine learning / deep learning methods? Will there be a test set release? <br />
+										A: As the data size for micro-expression is small, all the samples from CAS(ME)<sup>2</sup>-cropped and SAMM-LV should be used for result evaluation. And the common validation method is Leave-one-Subject-out cross validation.
+											</li>
+
+										</OL>
+
 
 								<br />
 
