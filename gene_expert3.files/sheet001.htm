@@ -1,0 +1,852 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../gene_expert3.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:等线;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../gene_expert3.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72" class=xl65>
+
+<table border=0 cellpadding=0 cellspacing=0 width=638 style='border-collapse:
+ collapse;table-layout:fixed;width:479pt'>
+ <col class=xl65 width=72 span=3 style='width:54pt'>
+ <col class=xl65 width=134 style='mso-width-source:userset;mso-width-alt:4288;
+ width:101pt'>
+ <col class=xl65 width=72 span=4 style='width:54pt'>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 width=72 style='height:14.25pt;width:54pt'>Team id</td>
+  <td class=xl65 width=72 style='width:54pt'>dataset</td>
+  <td class=xl65 width=72 style='width:54pt'>Emotion</td>
+  <td class=xl65 width=134 style='width:101pt'>gender</td>
+  <td class=xl65 width=72 style='width:54pt'>Upper</td>
+  <td class=xl65 width=72 style='width:54pt'>lower</td>
+  <td class=xl65 width=72 style='width:54pt'>noise</td>
+  <td class=xl65 width=72 style='width:54pt'>sum</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl66 align=right style='height:14.25pt'>3282</td>
+  <td class=xl67>CASME2</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>7</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>SAMM</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>SMIC</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl67 align=right>56</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl66 align=right style='height:14.25pt'>3295</td>
+  <td class=xl67>CASME2</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>6</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl66 style='height:14.25pt'>GRAY</td>
+  <td class=xl67>　</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>6</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>7</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>3</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>6</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>SAMM</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>3</td>
+  <td class=xl68 align=right>3</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl67 align=right>8</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>SMIC</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl67 align=right>76</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl66 align=right style='height:14.25pt'>3311</td>
+  <td class=xl67>CASME2</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>SAMM</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>SMIC</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl67 align=right>0</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl67 align=right>37</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl66 align=right style='height:14.25pt'>3320</td>
+  <td class=xl67>CASME2</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Negative</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Positive</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>asian female</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl67>　</td>
+  <td class=xl67>Surprise</td>
+  <td class=xl67>western male</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>SAMM</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>3</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl67 align=right>7</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Negative</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>3</td>
+  <td class=xl68 align=right>3</td>
+  <td class=xl67 align=right>8</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Positive</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl68 align=right>2</td>
+  <td class=xl67 align=right>5</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>asian female</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl68>　</td>
+  <td class=xl68>Surprise</td>
+  <td class=xl68>western male</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>1</td>
+  <td class=xl68 align=right>0</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>SMIC</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl67 align=right>1</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Negative</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>3</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Positive</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>2</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>4</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>asian female</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl69>　</td>
+  <td class=xl69>Surprise</td>
+  <td class=xl69>western male</td>
+  <td class=xl69 align=right>0</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl69 align=right>1</td>
+  <td class=xl67 align=right>2</td>
+ </tr>
+ <tr height=19 style='height:14.25pt'>
+  <td height=19 class=xl65 style='height:14.25pt'></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl65></td>
+  <td class=xl67 align=right>66</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=134 style='width:101pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+  <td width=72 style='width:54pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
